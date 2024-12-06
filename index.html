@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar y Menú Desplegable</title>
+    <!-- Enlace a Bootstrap 4.5.2 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand" href="#">
+            <img src="img/events2.svg" alt="Logo mt-4" style="width: 75px; height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/Sin título3.png" alt="burguer" style="width: 40px; height: 26px;">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><strong>INICIO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tabla"><strong>ROAD TO 10M</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>CREADORES</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto"><strong>CONTACTO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>RESULTADOS</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="img/cartel.png" alt="Cartel Principal" class="hero-image">
+    </header>
+
+    <div><img class="container-fluid m-0 p-0" src="img/tetera.png" alt="teter"></div>
+    
+    <img class="container-fluid m-0  p-0" src="img/b1.png" alt="b1">
+    <img class="container-fluid m-0  p-0" src="img/IMG3.png" alt="b1">
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col jornada1">
+                <img class="jornada" src="img/JORNADA1.png" alt="Jornada 1">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA2.png" alt="Jornada 2">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA3.png" alt="Jornada 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor que se ocultará -->
+    <div class="container text-center jornadas-extra" style="display: none;">
+        <div class="row align-items-start">
+            <div class="col">
+                <img class="jornada" src="img/JORNADA4.png" alt="Jornada 4">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA5.png" alt="Jornada 5">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA6.png" alt="Jornada 6">
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col">
+                <img class="jornada" src="img/JORNADA7.png" alt="Jornada 7">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA8.png" alt="Jornada 8">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA9.png" alt="Jornada 9">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA10.png" alt="Jornada 10">
+            </div>
+            <div class="col">
+                <img class="jornada" src="img/JORNADA FINAL.png" alt="Jornada 10">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Ver Más -->
+    <div class="container text-center">
+        <button id="ver-mas-btn" class="btn btn-light mt-3"><strong>VER MÁS</strong></button>
+    </div>
+
+
+    <div class="container-fluid ml-0 mr-0 text-center canje-puntos">
+        <h1 class="titulo-canje">Canje de puntos en Twitch - Semana 1</h1>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="opcion-canje">
+                    <h2 class="titulo-opcion">Balas grises una partida</h2>
+                    <p class="descripcion-opcion">
+                        Obliga al creador a usar balas grises durante al menos una partida.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="opcion-canje">
+                    <h2 class="titulo-opcion">Sin chaleco</h2>
+                    <p class="descripcion-opcion">
+                        El creador deberá de jugar una partida sin armadura de pecho.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="opcion-canje">
+                    <h2 class="titulo-opcion">Formato libre</h2>
+                    <p class="descripcion-opcion">
+                        Permite al creador ignorar el formato durante una partida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace a Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      
+
+    <!-- Tabla de Clasificación -->
+    <div class="tabla-resultados">
+        <h1 class="titulo-tabla">Tabla de Resultados</h1>
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th>Posición</th>
+              <th>Jugador</th>
+              <th>Koens Totales</th>
+              <th>Última Jornada</th>
+              <th>Semana 1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Participante: Pa1n -->
+            <tr class="fila-jugador" onclick="toggleDetalles('detalles-pa1n')">
+              <td>1</td>
+              <td>Pa1n</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr id="detalles-pa1n" class="detalles-jugador">
+              <td colspan="5">
+                <div class="detalle-puntos">
+                  <h3>Detalles de Koens por Jornada</h3>
+                  <ul class="nar">
+                    <li>Jornada 1 (Cresta norte): 0</li>
+                    <li>Jornada 2 (Zero to Hero): 0</li>
+                    <li>Jornada 3 (Mina bloqueo): 0</li>
+                    <li>Jornada 4 (Amería reforzada): 0</li>
+                    <li>Jornada 5 (Impostor): 0</li>
+                    <li>Jornada 6 (TV Bloqueo): 0</li>
+                    <li>Jornada 7 (Solo sniper): 0</li>
+                    <li>Jornada 8 (Granja reforzado): 0</li>
+                    <li>Jornada 9 (Set de élite): 0</li>
+                    <li>Jornada 10 (Valle bloqueo): 0</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <!-- Participante: Bardot -->
+            <tr class="fila-jugador" onclick="toggleDetalles('detalles-bardot')">
+              <td>2</td>
+              <td>Bardot</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr id="detalles-bardot" class="detalles-jugador">
+              <td colspan="5">
+                <div class="detalle-puntos">
+                  <h3>Detalles de Koens por Jornada</h3>
+                  <ul class="nar">
+                    <li>Jornada 1 (Cresta norte): 0</li>
+                    <li>Jornada 2 (Zero to Hero): 0</li>
+                    <li>Jornada 3 (Mina bloqueo): 0</li>
+                    <li>Jornada 4 (Amería reforzada): 0</li>
+                    <li>Jornada 5 (Impostor): 0</li>
+                    <li>Jornada 6 (TV Bloqueo): 0</li>
+                    <li>Jornada 7 (Solo sniper): 0</li>
+                    <li>Jornada 8 (Granja reforzado): 0</li>
+                    <li>Jornada 9 (Set de élite): 0</li>
+                    <li>Jornada 10 (Valle bloqueo): 0</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <!-- Participante: Mago -->
+            <tr class="fila-jugador" onclick="toggleDetalles('detalles-mago')">
+              <td>3</td>
+              <td>Mago</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr id="detalles-mago" class="detalles-jugador">
+              <td colspan="5">
+                <div class="detalle-puntos">
+                  <h3>Detalles de Koens por Jornada</h3>
+                  <ul class="nar">
+                    <li>Jornada 1 (Cresta norte): 0</li>
+                    <li>Jornada 2 (Zero to Hero): 0</li>
+                    <li>Jornada 3 (Mina bloqueo): 0</li>
+                    <li>Jornada 4 (Amería reforzada): 0</li>
+                    <li>Jornada 5 (Impostor): 0</li>
+                    <li>Jornada 6 (TV Bloqueo): 0</li>
+                    <li>Jornada 7 (Solo sniper): 0</li>
+                    <li>Jornada 8 (Granja reforzado): 0</li>
+                    <li>Jornada 9 (Set de élite): 0</li>
+                    <li>Jornada 10 (Valle bloqueo): 0</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <!-- Participante: Hspada -->
+            <tr class="fila-jugador" onclick="toggleDetalles('detalles-hspada')">
+              <td>4</td>
+              <td>Hspada</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr id="detalles-hspada" class="detalles-jugador">
+              <td colspan="5">
+                <div class="detalle-puntos">
+                  <h3>Detalles de Koens por Jornada</h3>
+                  <ul class="nar">
+                    <li>Jornada 1 (Cresta norte): 0</li>
+                    <li>Jornada 2 (Zero to Hero): 0</li>
+                    <li>Jornada 3 (Mina bloqueo): 0</li>
+                    <li>Jornada 4 (Amería reforzada): 0</li>
+                    <li>Jornada 5 (Impostor): 0</li>
+                    <li>Jornada 6 (TV Bloqueo): 0</li>
+                    <li>Jornada 7 (Solo sniper): 0</li>
+                    <li>Jornada 8 (Granja reforzado): 0</li>
+                    <li>Jornada 9 (Set de élite): 0</li>
+                    <li>Jornada 10 (Valle bloqueo): 0</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <!-- Participante: Owen -->
+            <tr class="fila-jugador" onclick="toggleDetalles('detalles-owen')">
+              <td>5</td>
+              <td>Owen</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr id="detalles-owen" class="detalles-jugador">
+              <td colspan="5">
+                <div class="detalle-puntos">
+                  <h3>Detalles de Koens por Jornada</h3>
+                  <ul class="nar">
+                    <li>Jornada 1 (Cresta norte): 0</li>
+                    <li>Jornada 2 (Zero to Hero): 0</li>
+                    <li>Jornada 3 (Mina bloqueo): 0</li>
+                    <li>Jornada 4 (Amería reforzada): 0</li>
+                    <li>Jornada 5 (Impostor): 0</li>
+                    <li>Jornada 6 (TV Bloqueo): 0</li>
+                    <li>Jornada 7 (Solo sniper): 0</li>
+                    <li>Jornada 8 (Granja reforzado): 0</li>
+                    <li>Jornada 9 (Set de élite): 0</li>
+                    <li>Jornada 10 (Valle bloqueo): 0</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div><img class="container-fluid abc m-0 p-0" src="img/events small (1).png" alt="footer"></div>
+        <div class="container ml-2">
+            <!-- Logo centrado -->
+           
+
+            <!-- Sección: Inicio -->
+            <div class="footer-section" style="color: aliceblue;">
+                <h2><a href="#top">Inicio</a></h2>
+            </div>
+
+            <!-- Sección: Conoce a los creadores -->
+            <div class="footer-section">
+                <h2>Conoce a los creadores</h2>
+            </div>
+
+            <!-- Sección: Road to 10M -->
+            <div class="footer-section" onclick="mostrarDiscord()">
+                <h2>Road to 10M</h2>
+            </div>
+
+            <!-- Sección: Discord -->
+            <div class="footer-section">
+                <h2>Discord</h2>
+                <p>
+                    <a href="javascript:void(0);" onclick="mostrarDiscord()">
+                        <button class="discord-button" id="discord-button">Unirse a Discord</button>
+                    </a>
+                </p>
+            </div>
+
+            <!-- Sección: Contacto -->
+            <div class="footer-section footer-contact">
+                <h2>Contacto</h2>
+                <p>arenabreakoutevents@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlaces a Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function mostrarDiscord() {
+            var discordButton = document.getElementById("discord-button");
+            discordButton.style.display = "block"; // Muestra el botón de Discord
+        }
+    </script>
+    <!-- Enlace a Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para el toggle de detalles -->
+    <script>
+        function toggleDetalles(detallesId) {
+            var detalles = document.getElementById(detallesId);
+            if (detalles.style.display === "none" || detalles.style.display === "") {
+                detalles.style.display = "table-row";
+            } else {
+                detalles.style.display = "none";
+            }
+        }
+
+        // Mostrar u ocultar "Ver más" con el botón
+        document.getElementById('ver-mas-btn').addEventListener('click', function () {
+            var extraJornadas = document.querySelector('.jornadas-extra');
+            extraJornadas.style.display = extraJornadas.style.display === "none" ? "block" : "none";
+            this.textContent = extraJornadas.style.display === "none" ? "VER MÁS" : "VER MENOS";
+        });
+    </script>
+</body>
+</html>
