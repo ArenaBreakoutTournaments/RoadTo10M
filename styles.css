@@ -163,7 +163,6 @@ h2 {
 /* Footer */
 footer {
   background-color: #222222;
-  background-image: url('/img/fondofooter.png');
   color: white;
   padding: 20px;
 }
@@ -405,7 +404,7 @@ p.te {
 }
 
 footer {
-  background-image: url('/img/fondofooter.png');
+  background-image: url('/img/fondo3.png');
   background-size: cover;
   background-position: center;
   color: rgb(181, 219, 217); /* Cambiado a azul */
@@ -461,37 +460,7 @@ footer {
   display: none; /* Oculto por defecto */
 }
 
-/* Estilo para las secciones en móvil */
-@media (max-width: 767px) {
-  .footer-section {
-      margin-bottom: 15px;
-  }
 
-  .footer-section h2 {
-      font-size: 1.2rem;
-  }
-
-  .footer-links a {
-      font-size: 1rem;
-      text-align: left;
-  }
-}
-
-/* Estilo para las secciones en PC */
-@media (min-width: 768px) {
-  .footer-section {
-      display: inline-block;
-      margin-right: 30px;
-  }
-
-  .footer-section h2 {
-      font-size: 2rem;
-  }
-
-  .footer-links a {
-      font-size: 1.4rem;
-  }
-}
 
 
 /* Fondo de la sección de participantes */
@@ -693,9 +662,7 @@ h2 {
   }
   
   /* Centrar los títulos en pantallas grandes */
-  .footer-section h2 {
-      text-align: center;
-  }
+
 }
 
 /* Asegurarse de que en móviles no se cambie el estilo de las secciones */
@@ -709,4 +676,31 @@ h2 {
   .footer-section h2 {
       text-align: left;
   }
+}
+
+/* Footer */
+footer {
+  background-image: url('/img/fondo3.png'); /* Corregido para que se vea el fondo */
+  background-size: cover; /* Imagen cubre todo el área */
+  background-position: center; /* Imagen centrada */
+  color: rgb(181, 219, 217); /* Cambiado a azul */
+  padding: 50px 0;
+  font-family: 'Avionic-Book', sans-serif;
+  background-attachment: fixed; /* Fija el fondo al hacer scroll */
+}
+
+/* Centrado del logo */
+.footer-logo {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Estilo de los títulos y texto */
+.footer-section h2 {
+  color: rgb(181, 219, 217);
+  font-family: 'Vectro-Bold', sans-serif;
+}
+
+.footer-section p {
+  color: rgb(181, 219, 217); /* Cambiado a azul */
 }
