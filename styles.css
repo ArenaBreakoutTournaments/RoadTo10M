@@ -162,7 +162,7 @@ h2 {
 
 /* Footer */
 footer {
-  background-color: #222222;
+  background-color: #00060a;
   color: white;
   padding: 20px;
 }
@@ -404,9 +404,7 @@ p.te {
 }
 
 footer {
-  background-image: url('/img/fondo3.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #00060a;
   color: rgb(181, 219, 217); /* Cambiado a azul */
   padding: 50px 0;
   font-family: 'Avionic-Book', sans-serif;
