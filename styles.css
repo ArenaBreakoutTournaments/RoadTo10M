@@ -17,6 +17,7 @@ body {
   z-index: 10; /* Colocar por encima del hero */
 }
 
+
 .navbar-toggler-icon {
   background-color: white; /* Icono del menú hamburguesa blanco */
 }
