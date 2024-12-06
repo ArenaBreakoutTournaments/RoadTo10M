@@ -7,8 +7,16 @@ body {
   font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
   background-color: #00060a;
   margin: 0px; /* Elimina márgenes por defecto */
-  padding: 0px; /* Elimina paddings por defecto */}
+  padding: 0px; /* Elimina paddings por defecto */
+  overflow-x: hidden;  /* Oculta cualquier contenido que sobresalga por el lado derecho */
+  margin: 0;  /* Elimina los márgenes por defecto */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  padding: 0; /* Elimina cualquier relleno por defecto */
+  width: 100%; /* Asegura que el body ocupe todo el ancho de la ventana */
+  overflow-x: hidden; /* Elimina el desbordamiento horizontal */}
+  
 /* Barra de navegación */
+/* Estilos generales del navbar */
 .navbar.bg-custom {
   background-color: #1f252500; /* Fondo personalizado */
   color: white; /* Textos blancos */
@@ -17,37 +25,78 @@ body {
   z-index: 10; /* Colocar por encima del hero */
 }
 
-
+/* Estilo del icono del menú hamburguesa */
 .navbar-toggler-icon {
   background-color: white; /* Icono del menú hamburguesa blanco */
 }
 
-.image-container {
-  display: flex; /* Flexbox para centrar contenido */
+/* Flexbox para centrar el contenido en desktop */
+.navbar-collapse {
+  display: flex; /* Usar flexbox para el contenedor de la navegación */
   justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
-  height: 3vh; /* Tamaño completo del viewport */
+  width: 100%; /* Asegurarnos de que el contenedor ocupe todo el ancho */
 }
 
-/* Imagen responsive */
-.responsive-image {
-  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
-  height: auto; /* Mantiene la proporción */
+/* Alineación de las secciones de navegación */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Centrado de los elementos de la lista */
+  flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+  padding-left: 0;
+  margin: 0;
 }
 
+/* Estilo para los elementos del menú (nav-item) */
+.nav-item {
+  margin: 0 10px; /* Reducir la distancia entre las secciones del menú */
+}
+
+/* Estilos para los enlaces del menú */
 .nav-link {
   color: white !important; /* Textos del menú blancos */
   font-size: 15px;
+  font-family: 'Vectro-Bold', sans-serif; /* Aplicamos la tipografía personalizada */
 }
 
 .nav-link:hover {
   color: #FF4500 !important; /* Color de hover para los enlaces */
 }
 
+/* Estilo para la imagen de la marca */
 .navbar-brand img {
   width: 100px;
   height: auto;
 }
+
+
+
+/* Media query para la versión móvil */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: block; /* En pantallas pequeñas, se muestra como bloque */
+  }
+
+  .navbar-nav {
+    justify-content: flex-start; /* En móvil, los elementos se alinean a la izquierda */
+  }
+
+  /* Reducir el espacio entre los elementos del menú en móvil */
+  .nav-item {
+    margin: 5px 0; /* Menor margen entre los elementos en versión móvil */
+  }
+
+  .nav-link {
+    font-size: 14px; /* Tamaño de fuente más pequeño para móvil */
+  }
+}
+
+/* Media query para la versión web (pantallas grandes) */
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 18px; /* Aumentamos el tamaño de texto para la versión web */
+  }
+}
+
 
 /* Hero */
 .hero {
@@ -379,26 +428,6 @@ footer {
   color: rgb(181, 219, 217); /* Cambiado a azul */
 }
 
-/* Estilo de los enlaces */
-.footer-links {
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-links a {
-  display: block;
-  color: rgb(181, 219, 217); /* Cambiado a azul */
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
 /* Estilo del botón Discord */
 .discord-button {
   margin-top: 15px;
@@ -423,6 +452,14 @@ footer {
   margin-top: 20px;
 }
 
+/* Correo oculto por defecto en la sección Discord */
+#discord-email {
+  color: rgb(181, 219, 217);
+  font-size: 1rem;
+  margin-top: 10px;
+  display: none; /* Oculto por defecto */
+}
+
 /* Estilo para las secciones en móvil */
 @media (max-width: 767px) {
   .footer-section {
@@ -432,7 +469,6 @@ footer {
   .footer-section h2 {
       font-size: 1.2rem;
   }
-  
 
   .footer-links a {
       font-size: 1rem;
@@ -456,6 +492,220 @@ footer {
   }
 }
 
-.abc {
+
+/* Fondo de la sección de participantes */
+#participantes {
+    background-image: url('img/fondo4.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'VECTRO-Bold', sans-serif;
+    color: black;
+}
+
+/* Título */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    color: black; /* Todo el texto de la tarjeta será negro */
+}
+
+.card-img-top {
+    border-radius: 10px;
+    width: 100px; /* Ajusta el tamaño de la imagen de cada creador */
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Centramos el logo dentro de la tarjeta */
+.card-body {
+    text-align: center;
+}
+
+/* Hover efecto para tarjetas */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para los enlaces sociales */
+.social-links a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #dc3545;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #c82333;
+}
+
+/* Iconos de redes sociales */
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-links a {
+        font-size: 0.8rem;
+    }
+
+    .card-img-top {
+        width: 80px;
+        height: 80px;
+    }
+}
+/* Fondo de la sección de participantes */
+
+
+#participantes {
+  background-image: url('img/fondo4.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'VECTRO-Bold', sans-serif;
+  color: white; /* Texto de toda la sección en blanco */
+  background-repeat: no-repeat;
+  width: 100%; /* Asegura que el fondo cubra el ancho completo */
+  padding: 0; /* Elimina cualquier relleno no deseado */
+  box-sizing: border-box; /* Para que el padding no afecte el tamaño total del elemento */
+}
+
+/* Título */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Título en blanco */
+}
+
+/* Estilo para las tarjetas */
+.card {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  color: white; /* Todo el texto de la tarjeta será blanco */
+}
+
+.card-img-top {
+  border-radius: 10px;
+  width: 100px; /* Ajusta el tamaño de la imagen de cada creador */
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Centramos el logo dentro de la tarjeta */
+.card-body {
+  text-align: center;
+}
+
+/* Hover efecto para tarjetas */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para los textos de redes sociales */
+.social-links {
+  margin-top: 10px;
+}
+
+.social-text {
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(209, 170, 134);
+  margin: 5px 0;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .card {
+      margin-bottom: 20px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-text {
+      font-size: 0.9rem;
+  }
+
+  .card-img-top {
+      width: 80px;
+      height: 80px;
+  }
+}
+.container, .row {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  width: 100%; /* Asegura que las tarjetas no sobresalgan del contenedor */
+  box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+}
+
+/* Si tienes imágenes dentro de las tarjetas, asegúrate de que no se desborden */
+.card-img-top {
+  width: 100%; /* Se ajusta al 100% del ancho disponible */
+  object-fit: cover;
+  max-height: 200px; /* Limita la altura de la imagen si es necesario */
+}
+
+.jeje {
+  width: 40px;
+  height: 40px;
+}
+
+/* Centrar las secciones del footer en pantallas grandes */
+@media (min-width: 992px) {
+  .footer-section {
+      display: flex;
+      justify-content: center; /* Centra los elementos en la sección */
+      align-items: center;     /* Centra los elementos verticalmente */
+      margin: 0 15px;          /* Añade margen entre las secciones */
+  }
   
+  /* Centrar los títulos en pantallas grandes */
+  .footer-section h2 {
+      text-align: center;
+  }
+}
+
+/* Asegurarse de que en móviles no se cambie el estilo de las secciones */
+@media (max-width: 991px) {
+  .footer-section {
+      display: block;  /* Alinea las secciones como bloque en dispositivos móviles */
+      margin-bottom: 15px;  /* Añade espacio entre las secciones */
+  }
+
+  /* Deja el texto alineado a la izquierda en móviles */
+  .footer-section h2 {
+      text-align: left;
+  }
 }
