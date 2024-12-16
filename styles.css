@@ -336,7 +336,7 @@ p.te {
 
 /* Título de la tabla */
 .titulo-tabla {
-  font-family: 'Vectro-Bold', sans-serif;
+  font-family: 'Avionic-Book', sans-serif;
   font-size: 2rem;
   color: white;
   margin-bottom: 20px;
@@ -361,7 +361,7 @@ p.te {
 
 .tabla th {
   background-color: rgba(255, 69, 0, 0.7);
-  font-family: 'Vectro-Bold', sans-serif;
+  font-family: 'Avionic-Book', sans-serif;
 }
 
 /* Filas de jugadores */
