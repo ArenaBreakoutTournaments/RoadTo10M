@@ -368,6 +368,7 @@ p.te {
 .fila-jugador {
   cursor: pointer;
   transition: background 0.3s ease;
+  font-family: 'te', 'Arial Narrow', Arial, sans-serif;
 }
 
 .fila-jugador:hover {
@@ -404,7 +405,7 @@ p.te {
 }
 
 footer {
-  background-color: #00060a;
+  background-image: url('fondo3.png'); /* Corregido para que se vea el fondo */
   color: rgb(181, 219, 217); /* Cambiado a azul */
   padding: 50px 0;
   font-family: 'Avionic-Book', sans-serif;
@@ -678,7 +679,7 @@ h2 {
 
 /* Footer */
 footer {
-  background-image: url('/img/fondo3.png'); /* Corregido para que se vea el fondo */
+  background-image: url('fondo3.png'); /* Corregido para que se vea el fondo */
   background-size: cover; /* Imagen cubre todo el área */
   background-position: center; /* Imagen centrada */
   color: rgb(181, 219, 217); /* Cambiado a azul */
