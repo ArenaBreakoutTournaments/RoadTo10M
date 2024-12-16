@@ -348,8 +348,7 @@ p.te {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  font-family: 'Avionic-Book', sans-serif;
-}
+  font-family: 'te', 'Arial Narrow', Arial, sans-serif;
 
 .tabla th,
 .tabla td {
@@ -357,24 +356,24 @@ p.te {
   padding: 10px;
   text-align: center;
   color: white;
-  font-family: 'Avionic-Book', sans-serif;
+  font-family: 'te', 'Arial Narrow', Arial, sans-serif;
 }
 
 .tabla th {
   background-color: rgba(255, 69, 0, 0.7);
-  font-family: 'Avionic-Book', sans-serif;
+  font-family: 'te', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Filas de jugadores */
 .fila-jugador {
   cursor: pointer;
   transition: background 0.3s ease;
-  font-family: 'Avionic-Book', sans-serif;
+  ffont-family: 'te', 'Arial Narrow', Arial, sans-serif;
 }
 
 .fila-jugador:hover {
   background: rgba(255, 69, 0, 0.7);
-  font-family: 'Avionic-Book', sans-serif;
+  font-family: 'te', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Detalles del jugador */
