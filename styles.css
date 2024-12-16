@@ -368,12 +368,12 @@ p.te {
 .fila-jugador {
   cursor: pointer;
   transition: background 0.3s ease;
-font-family: 'Avionic-Book';
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .fila-jugador:hover {
   background: rgba(255, 69, 0, 0.7);
-  font-family: 'Avionic-Book';
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Detalles del jugador */
